@@ -41,7 +41,7 @@ export default defineType({
             type: 'number',
             name: 'cebStars',
             title: 'CEB Stars',
-            validation: Rule => Rule.required().min(0).max(7).error('Must be 0 through 7')
+            validation: Rule => Rule.min(0).max(7).error('Must be 0 through 7')
         }),
         defineField({
             type: 'array',
